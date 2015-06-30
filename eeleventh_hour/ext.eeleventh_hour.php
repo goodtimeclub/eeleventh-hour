@@ -24,7 +24,7 @@
  * @link		http://nac-cna.ca
  */
 
-class Eleventh_hour_ext {
+class Eeleventh_hour_ext {
 
 	// Setup custom settings in this array.
 	public $settings = array(
@@ -141,5 +141,5 @@ class Eleventh_hour_ext {
 	// ----------------------------------------------------------------------
 }
 
-/* End of file ext.eleventh_hour.php */
-/* Location: /system/expressionengine/third_party/eleventh_hour/ext.eleventh_hour.php */
+/* End of file ext.eeleventh_hour.php */
+/* Location: /system/expressionengine/third_party/eeleventh_hour/ext.eeleventh_hour.php */
