@@ -28,7 +28,7 @@ class Eeleventh_hour_ext {
 
 	// Setup custom settings in this array.
 	public $settings = array(
-		'channel_id' => '58'
+		'channel_id' => '9999'
 	);
 
 	public $description		= 'Sets the expiration date\'s time to 11:59PM';
@@ -105,7 +105,7 @@ class Eeleventh_hour_ext {
 					$this->entry_expiration_time = ($row->expiration_date == '0' ? '0' : $row->expiration_date);
 
 					if ($this->entry_expiration_time != "0"){
-						$this->entry_expiration_time = strftime('%Y%m%d0259', $this->entry_expiration_time);
+						$this->entry_expiration_time = strftime('%Y%m%d2359', $this->entry_expiration_time);
 						$this->entry_expiration_time = DateTime::createFromFormat('YmdHi', $this->entry_expiration_time);
 						$this->entry_expiration_timestamp = $this->entry_expiration_time->getTimestamp();
 						$this->new_entry_data = ee()->db->update( 'channel_titles', array( 'expiration_date'  => $this->entry_expiration_timestamp ), array( "entry_id"=>$entry_id) );
